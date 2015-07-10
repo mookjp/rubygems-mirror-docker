@@ -15,4 +15,4 @@ ADD .mirrorrc /root/.gem/.mirrorrc
 ADD config.ru /root/.gem/mirror/config.ru
 WORKDIR /root/.gem/mirror
 
-CMD ["rackup"]
+CMD ["rackup", "--host", "0.0.0.0"]
