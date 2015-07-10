@@ -2,6 +2,7 @@ rubygems-mirror-docker
 ===
 
 Docker image of [rubygems-mirror](https://github.com/rubygems/rubygems-mirror).
+This image includs rubygems-mirror and [geminabox](https://github.com/geminabox/geminabox) as a server.
 
 * [Docker Hub Repository](https://registry.hub.docker.com/u/mookjp/rubygems-mirror-docker/builds_history/252421/)
 
