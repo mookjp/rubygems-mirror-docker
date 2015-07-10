@@ -3,6 +3,8 @@ rubygems-mirror-docker
 
 Docker image of [rubygems-mirror](https://github.com/rubygems/rubygems-mirror).
 
+* [Docker Hub Repository](https://registry.hub.docker.com/u/mookjp/rubygems-mirror-docker/builds_history/252421/)
+
 ## Usage
 
 Before starting gem server, it needs to fetch packages from rubygems to mirror directory.
