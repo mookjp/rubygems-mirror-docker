@@ -27,11 +27,11 @@ Set your rubygems mirror by following:
 * http://bundler.io/v1.10/bundle_config.html
 
 ```
-bundle config mirror.http://rubygems.org http://your-mirror-address:9292
+bundle config mirror.http://rubygems.org http://0.0.0.0:9292
 ```
 
 * http://guides.rubygems.org/run-your-own-gem-server/#using-gems-from-your-server
 
 ```
-gem sources --add http://your-mirror-address:9292
+gem sources --add http://0.0.0.0:9292
 ```
