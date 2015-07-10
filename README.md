@@ -11,13 +11,13 @@ Create data container first to make gem packages portable.
 ```
 docker create --name gems-data -v /data/rubygems busybox
 # Fetch packages to data only container
-docker run -d --volumes-from gems-data rubygems-mirror gem mirror
+docker run -d --volumes-from gems-data mookjp/rubygems-mirror-docker gem mirror
 ```
 
 then run server as your mirror.
 
 ```
-docker run -d --volumes-from gems-data -p 9292 rubygems-mirror
+docker run -d --volumes-from gems-data -p 9292 mookjp/rubygems-mirror-docker
 ```
 
 ## Set your mirror
