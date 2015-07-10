@@ -1,0 +1,4 @@
+---
+- from: http://rubygems.org
+  to: /data/rubygems
+  parallelism: 10
