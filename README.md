@@ -8,8 +8,8 @@ This image includs rubygems-mirror and [geminabox](https://github.com/geminabox/
 
 ## Usage
 
-Before starting gem server, it needs to fetch packages from rubygems to mirror directory.
-Create data container first to make gem packages portable.
+Before starting the gem mirror server, it needs to fetch packages from rubygems to mirror directory.
+Create data container first to make the gem packages portable.
 
 ```
 docker create --name gems-data -v /data/rubygems busybox
@@ -17,7 +17,7 @@ docker create --name gems-data -v /data/rubygems busybox
 docker run -d --volumes-from gems-data mookjp/rubygems-mirror-docker gem mirror
 ```
 
-then run server as your mirror.
+then run the server as your mirror.
 
 ```
 docker run -d --volumes-from gems-data -p 9292 mookjp/rubygems-mirror-docker
